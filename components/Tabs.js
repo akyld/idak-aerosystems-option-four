@@ -1,0 +1,5 @@
+"use client";import {useState} from "react";import Link from "next/link";
+const D=[["Airframe / structure","Built for the load.","Structural design, analysis and production-ready definition shaped around demanding aerospace programs.","Structural engineering","/capabilities#structural-design-engineering"],["ATA 29 / actuation","Motion by design.","Hydraulic power and actuation developed from component definition through testing and qualification.","Hydraulics and actuation","/capabilities#hydraulics-actuation-systems"],["Electrical / integration","Every connection counts.","Harness routing, avionics and embedded systems connect the aircraft's essential functions.","Aircraft harness design","/capabilities#aircraft-harness-design"]];
+export default function Tabs(){const [k,setK]=useState(0);const d=D[k];
+return(<div className="tabs"><div className="tl" role="tablist">{D.map((x,i)=><button key={i} role="tab" aria-selected={i===k} onClick={()=>setK(i)}>{x[0]}</button>)}</div>
+<div><h3>{d[1]}</h3><p className="sub">{d[2]}</p><Link className="lnk" href={d[4]}>{d[3]}</Link></div></div>)}

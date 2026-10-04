@@ -1,0 +1,5 @@
+import Apply from "../../components/Apply";
+export const metadata={title:"Work With Us | IDAK Aerosystems",description:"Explore IDAK Aerosystems' professional network and submit a general application for aerospace engineering and technical roles."};
+export default function P(){return(<><section><div className="wrap narrow"><p className="kick">Work With Us / Professional network</p><h1>Work With Us.</h1><p className="sub">Professionals may submit a general application to IDAK.</p>
+<h2>Engineering and technical talent.</h2><p>IDAK works with specialists across aerospace and defence—engineers, designers, systems specialists and program professionals who value accuracy and ownership.</p><p><b>There are currently no published vacancies. General applications are welcome.</b></p></div></section>
+<section className="alt"><div className="wrap narrow"><p className="kick">General application</p><h2>Tell us where you can contribute.</h2><p className="sub">This application path is for professionals. IDAK’s separate Recruitment capability supports aerospace and defence organizations sourcing contract and permanent talent.</p><Apply/></div></section></>)}
